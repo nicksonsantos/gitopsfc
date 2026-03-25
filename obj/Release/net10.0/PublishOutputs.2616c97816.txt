@@ -1,0 +1,9 @@
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\gitops.exe
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\appsettings.Development.json
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\appsettings.json
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\gitops.dll
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\gitops.deps.json
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\gitops.runtimeconfig.json
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\gitops.pdb
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Nickson\dev\gitops\bin\Release\net10.0\publish\Microsoft.OpenApi.dll

@@ -1,20 +1,19 @@
-deployment:
-  apiVersion: apps/v1
-  kind: Deployment
-  metadata:
-    name: dotnetserver
-  spec:
-    replicas: 3
-    selector:
-      matchLabels:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnetserver
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dotnetserver
+  template:
+    metadata:
+      labels:
         app: dotnetserver
-    template:
-      metadata:
-        labels:
-          app: dotnetserver
-      spec:
-        containers:
-        - name: dotnetserver
-          image: dotnetserver:latest
-          ports:
-          - containerPort: 8080
+    spec:
+      containers:
+      - name: dotnetserver
+        image: dotnetserver:latest
+        ports:
+        - containerPort: 8080

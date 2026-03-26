@@ -6,6 +6,6 @@ resources:
 - service.yaml
 
 images:
-  - name: dotnetserver
-    newName: nicksonendlich/gitopsfc
-    newTag: newtag
+- name: dotnetserver
+  newName: nicksonendlich/gitopsfc
+  newTag: c485462407bb45f0ce2897b4f466976797c63f8e

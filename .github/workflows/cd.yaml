@@ -23,3 +23,28 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/gitopsfc:${{ github.sha }}, ${{ secrets.DOCKER_USERNAME }}/gitopsfc:latest
+
+      - name: Setup Kustomize
+        uses: imranismail/setup-kustomize@v1
+        with:
+          kustomize-version: '4.5.4'
+
+      - name: Update Kubernetes resources
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          cd k8s
+          kustomize edit set image dotnetserver=${DOCKER_USERNAME}/gitopsfc:$GITHUB_SHA
+
+      - name: Commit
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -am "Bump docker version"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository: nicksonsantos/gitopsfc

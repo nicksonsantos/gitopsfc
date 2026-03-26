@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gitops")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9247d0d29a20405b7417838ed1361379e3b3672")]
 [assembly: System.Reflection.AssemblyProductAttribute("gitops")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gitops")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
